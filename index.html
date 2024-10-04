@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="shortcut icon" href="./assets/images.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <div>
-            <img src="./assets/SG logo.svg" alt="">
-            <h3>Plateforme de traitement des candidatures</h3>
-            <div>
-                <button>
-                    <div>LA</div> 
-                    <a href="#">Lisa ATHANA</a>
-                </button>
+    <header class="header">
+            <img src="./assets/SG logo.svg" alt="Logo SG" class="header__image">
+            <h3 class="header__title">Plateforme de traitement des candidatures</h3>
+            <div class="header__actions">
+                <div class="header__button">
+                    <span class="header__avatar">LA</span> 
+                    <a href="#" class="header__profile">Lisa ATHANE</a>
+                </div>
                 <img src="./assets/logout.svg" alt="">
             </div>
-        </div>
     </header>
-    <nav>
+    <nav class="nav">
+        <a href="#" class="nav__item"><img src="./assets/home.svg" alt="house icon"></a>
         <a href="#" class="nav__item">OFFRES DISPONIBLES</a>
         <a href="#" class="nav__item nav__item--active">VOS CANDIDATURES</a>
         <a href="#" class="nav__item">VOTRE CV</a>
@@ -28,36 +28,36 @@
     </nav>
 
     <main>
-       <section>
-        <h2>Vos candidatures</h2>
-        <table>
-            <tr>
-                <th># de Offre</th>
-                <th>Intitulé de l'offre</th>
-                <th>Date de mise en ligne</th>
-                <th>Status de la candidature</th>
-                <th>Retour RH</th>
+       <section class="section__candidature">
+        <h2 class="section__candidature__title">Vos candidatures</h2>
+        <table class="section__candidature__table">
+            <tr class="section__candidature__table__row">
+                <th class="section__candidature__table__header"># de Offre</th>
+                <th class="section__candidature__table__header">Intitulé de l'offre</th>
+                <th class="section__candidature__table__header">Date de mise en ligne</th>
+                <th class="section__candidature__table__header">Status de la candidature</th>
+                <th class="section__candidature__table__header">Retour RH</th>
             </tr>
             <tr>
-                <td>3234</td>
-                <td>Chef de service déploiement</td>
-                <td>13/08/2018</td>
-                <td>En cours</td>
-                <td>Entretien le 31/08/2018</td>
+                <td class="section__candidature__table__item">3234</td>
+                <td  class="section__candidature__table__item">Chef de service déploiement</td>
+                <td  class="section__candidature__table__item">13/08/2018</td>
+                <td  class="section__candidature__table__item">En cours</td>
+                <td  class="section__candidature__table__item">Entretien le 31/08/2018</td>
             </tr>
             <tr>
-                <td>3237</td>
-                <td>Contrôleur de Gestion</td>
-                <td>14/08/2018</td>
-                <td>Entretien le 31/08/2018</td>
-                <td>Rejetée</td>
+                <td  class="section__candidature__table__item">3237</td>
+                <td  class="section__candidature__table__item">Contrôleur de Gestion</td>
+                <td  class="section__candidature__table__item">14/08/2018</td>
+                <td  class="section__candidature__table__item">Entretien le 31/08/2018</td>
+                <td  class="section__candidature__table__item">Rejetée</td>
             </tr>
             <tr>
-                <td>3237</td>
-                <td>Conseillère clientelle</td>
-                <td>09/08/2018</td>
-                <td>Entretien le 31/08/2018</td>
-                <td>Accepté</td>
+                <td  class="section__candidature__table__item">3237</td>
+                <td  class="section__candidature__table__item">Conseillère clientelle</td>
+                <td  class="section__candidature__table__item">09/08/2018</td>
+                <td  class="section__candidature__table__item">Entretien le 31/08/2018</td>
+                <td  class="section__candidature__table__item">Accepté</td>
             </tr>
         </table>
        </section>
