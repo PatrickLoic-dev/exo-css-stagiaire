@@ -28,76 +28,83 @@
     </nav>
 
     <main>
-       <section class="section__candidature">
-        <h2 class="section__candidature__title">Vos candidatures</h2>
-        <table class="section__candidature__table">
-            <tr class="section__candidature__table__row">
-                <th class="section__candidature__table__header"># de Offre</th>
-                <th class="section__candidature__table__header">Intitulé de l'offre</th>
-                <th class="section__candidature__table__header">Date de mise en ligne</th>
-                <th class="section__candidature__table__header">Status de la candidature</th>
-                <th class="section__candidature__table__header">Retour RH</th>
+    <section class="Candidature container">
+        <h2 class="Candidature__title">Vos candidatures</h2>
+        <table class="Candidature__table">
+            <thead>
+            <tr class="Candidature__table__row">
+                <th class="Candidature__table__header"># de Offre</th>
+                <th class="Candidature__table__header">Intitulé de l'offre</th>
+                <th class="Candidature__table__header">Date de mise en ligne</th>
+                <th class="Candidature__table__header">Status de la candidature</th>
+                <th class="Candidature__table__header">Retour RH</th>
             </tr>
-            <tr>
-                <td class="section__candidature__table__item">3234</td>
-                <td  class="section__candidature__table__item">Chef de service déploiement</td>
-                <td  class="section__candidature__table__item">13/08/2018</td>
-                <td  class="section__candidature__table__item">En cours</td>
-                <td  class="section__candidature__table__item">Entretien le 31/08/2018</td>
+        </thead>
+        <tbody>
+            <tr class="Candidature__table__row">
+                <td class="Candidature__table__item">3234</td>
+                <td  class="Candidature__table__item">Chef de service déploiement</td>
+                <td  class="Candidature__table__item">13/08/2018</td>
+                <td  class="Candidature__table__item">En cours</td>
+                <td  class="Candidature__table__item Candidature__table__item--pending">Entretien le 31/08/2018</td>
             </tr>
-            <tr>
-                <td  class="section__candidature__table__item">3237</td>
-                <td  class="section__candidature__table__item">Contrôleur de Gestion</td>
-                <td  class="section__candidature__table__item">14/08/2018</td>
-                <td  class="section__candidature__table__item">Entretien le 31/08/2018</td>
-                <td  class="section__candidature__table__item">Rejetée</td>
+            <tr class="Candidature__table__row">
+                <td  class="Candidature__table__item">3237</td>
+                <td  class="Candidature__table__item">Contrôleur de Gestion</td>
+                <td  class="Candidature__table__item">14/08/2018</td>
+                <td  class="Candidature__table__item">Entretien le 31/08/2018</td>
+                <td  class="Candidature__table__item Candidature__table__item--failed">Rejetée</td>
             </tr>
-            <tr>
-                <td  class="section__candidature__table__item">3237</td>
-                <td  class="section__candidature__table__item">Conseillère clientelle</td>
-                <td  class="section__candidature__table__item">09/08/2018</td>
-                <td  class="section__candidature__table__item">Entretien le 31/08/2018</td>
-                <td  class="section__candidature__table__item">Accepté</td>
+            <tr class="Candidature__table__row">
+                <td  class="Candidature__table__item">3237</td>
+                <td  class="Candidature__table__item">Conseillère clientelle</td>
+                <td  class="Candidature__table__item">09/08/2018</td>
+                <td  class="Candidature__table__item">Entretien le 31/08/2018</td>
+                <td  class="Candidature__table__item Candidature__table__item--success">Accepté</td>
             </tr>
+        </tbody>
         </table>
-       </section>
+    </section>
 
-       <section>
-        <h2>Offres similaires</h2>
-        <article>
-            <h4>CDD</h4>
-            <h2>International Marketing Project Manager H/F</h2>
-            <div>
-                <img src="./assets/location.svg" alt="location">
-                <h3>Brazzaville</h3>
-            </div>
-        </article>
+    <section class="Offres container">
+        <div class="Offres__container">
+            <h2 class="Offres__container__titre">Offres similaires</h2>
+            <article class="Offres__container__card">
+                <h4  class="Offres__container__card__title">CDD</h4>
+                <h2 class="Offres__container__card__job">International Marketing Project Manager H/F</h2>
+                <div class="Offres__container__card__location">
+                    <img src="./assets/location.svg" alt="location">
+                    <h3>Brazzaville</h3>
+                </div>
+            </article>
+    
+            <article class="Offres__container__card">
+                <h4 class="Offres__container__card__title">CDI</h4>
+                <h2 class="Offres__container__card__job">Contrôleur de Gestion Sociale H/F</h2>
+                <div class="Offres__container__card__location">
+                    <img src="./assets/location.svg" alt="location">
+                    <h3>Point-Noire</h3>
+                </div>
+            </article>
+    
+            <article class="Offres__container__card">
+                <h4 class="Offres__container__card__title">CDD</h4>
+                <h2 class="Offres__container__card__job">Conseiller Clientèle BtoB, H/F, CDD</h2>
+                <div class="Offres__container__card__location">
+                    <img src="./assets/location.svg" alt="location">
+                    <h3>Point-Noire</h3>
+                </div>
+            </article>
+        </div>
 
-        <article>
-            <h4>CDI</h4>
-            <h2>Contrôleur de Gestion Sociale H/F</h2>
-            <div>
-                <img src="./assets/location.svg" alt="location">
-                <h3>Point-Noire</h3>
-            </div>
-        </article>
+    </section>
 
-        <article>
-            <h4>CDD</h4>
-            <h2>Conseiller Clientèle BtoB, H/F, CDD</h2>
-            <div>
-                <img src="./assets/location.svg" alt="location">
-                <h3>Point-Noire</h3>
-            </div>
-        </article>
-       </section>
-
-       <section>
+    <section class="Contact">
         <h4>Nous Contacter</h4>
         <h3>Nous appeler : (242) 06 504 22 22</h3>
         <h3>Nous écrire : sgc.qualite@socgen.com</h3>
         <h3><a href="#">Trouver une agence</a></h3>
-       </section>
+    </section>
     </main>
     <footer>
         <div>
