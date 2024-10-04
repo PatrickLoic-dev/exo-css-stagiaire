@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="top">
             <img src="./assets/SG logo.svg" alt="Logo SG" class="header__image">
             <h3 class="header__title">Plateforme de traitement des candidatures</h3>
             <div class="header__actions">
@@ -31,7 +31,7 @@
     <section class="Candidature container">
         <h2 class="Candidature__title">Vos candidatures</h2>
         <table class="Candidature__table">
-            <thead>
+            <thead >
             <tr class="Candidature__table__row">
                 <th class="Candidature__table__header"># de Offre</th>
                 <th class="Candidature__table__header">Intitulé de l'offre</th>
@@ -66,7 +66,7 @@
         </table>
     </section>
 
-    <section class="Offres container">
+    <section class="Offres">
         <div class="Offres__container">
             <h2 class="Offres__container__titre">Offres similaires</h2>
             <article class="Offres__container__card">
@@ -100,25 +100,26 @@
     </section>
 
     <section class="Contact">
-        <h4>Nous Contacter</h4>
-        <h3>Nous appeler : (242) 06 504 22 22</h3>
-        <h3>Nous écrire : sgc.qualite@socgen.com</h3>
-        <h3><a href="#">Trouver une agence</a></h3>
+        <h4 class="Contact__heading">Nous Contacter</h4>
+        <h3 class="Contact__information">Nous appeler : (242) 06 504 22 22</h3>
+        <h3 class="Contact__information">Nous écrire : sgc.qualite@socgen.com</h3>
+        <h3 class="Contact__information"><a href="#">Trouver une agence</a></h3>
     </section>
     </main>
-    <footer>
-        <div>
-            <img src="./assets/SG logo.svg" alt="">
+    <footer class="Footer">
+        <a href="./#top" class="Footer__oval__btn"><div class="Triangle"></div>TOP</a>
+        <div class="Footer__logo">
+            <img src="./assets/SG logo tr.png" alt="">
             <select>
                 <option value="">Nos sites</option>
             </select>
         </div>
-        <div>
-            <span><a href="">Contact</a></span>
-            <span><a href="">Mentions légales</a></span>
-            <span><a href="">Plan du site</a></span>
-            <span><a href="">Sécurité</a></span>
-            <span><a href="">Crédits</a></span>
+        <div class="Footer__links">
+            <span class="Footer__links__item"><a href="">Contact</a></span>
+            <span class="Footer__links__item"><a href="">Mentions légales</a></span>
+            <span class="Footer__links__item"><a href="">Plan du site</a></span>
+            <span class="Footer__links__item"><a href="">Sécurité</a></span>
+            <span class="Footer__links__item"><a href="">Crédits</a></span>
         </div>
     </footer>
 </body>

@@ -2,17 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
     font-family: 'HelveticaNeue', sans-serif;
     background-color: #FFFFFF;
+    user-select: none;
 }
 
 h2{
     font-size: 30px;
     border-left: 2px solid #E60028;
     padding-left: 16px;
+    font-weight: 400;
 }
 
 .container {
@@ -99,22 +102,23 @@ h2{
 
 .Candidature__table{
     margin-bottom: 44px;
-    border-color: #F2F2F2;  
+    border-collapse: collapse;
 }
 
 .Candidature__table__row{
-    border: 10px solid #F2F2F2;
+    border: 1px solid #F2F2F2;
 }
 
 .Candidature__table__header{
     text-align: left;
     color: #8696A6;
     text-transform: uppercase;
-    padding: 1vw 2vw;
+    padding: 1vh 2vw;
 }
 
 .Candidature__table__item{
-    padding: 1vw 2vw;
+    padding: 1vH 2vw;
+    font-weight: 600;
 }
 
 .Candidature__table__item--success{
@@ -132,11 +136,13 @@ h2{
 .Offres{
     display: flex;
     flex-direction: column;
+    margin-bottom: 5vh;
+    padding: 0 8vw;
 }
 
 .Offres__container {
     background-color: #F5F7F9;
-    padding: 3vw 14vw;
+    padding: 10vh 14vw;
 }
 
 .Offres__container__card{
@@ -152,13 +158,15 @@ h2{
 
 .Offres__container__card__title{
     color: #E60028;
+    font-size: 17px;
 }
 
 .Offres__container__card__job{
    border: none;
    font-weight: 300;
+   font-size: 25px;
    padding: 0;
-   margin: 1vw 0;
+   margin: 2vh 0;
 }
 
 .Offres__container__card__location{
@@ -169,4 +177,91 @@ h2{
 .Offres__container__card__location>h3{
     font-weight: 300;
     margin-left: 8px;
+}
+
+.Contact{
+    display: flex;
+    flex-direction: column;
+    padding: 3vh 5vw;
+    background-color: #F5F7F9;
+}
+
+.Contact__heading{
+    margin-bottom: 8px;
+    color: #C8CDD3;
+    font-size: 12px;
+}
+
+.Contact__information{
+    font-size: 17px;
+    line-height: 23px;
+    font-weight: 500;
+}
+
+.Contact__information>a{
+    text-decoration: none;
+    color: #000;
+}
+
+.Footer {
+    background-color: #2e343e;
+    padding: 2vh 5vw;
+}
+
+.Footer__logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1vh;
+    position: relative;
+}
+
+.Footer__oval__btn{
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    width: 150px;
+    background-color: #F5F7F9;
+    border: none;
+    color: #C8CDD3;
+    text-decoration: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 47%;
+    top: 152%;
+}
+
+.Triangle{
+    width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 25px solid #C8CDD3;
+    margin-bottom: 4px;
+}
+
+.Footer__logo>select{
+    background-color: #2e343e;
+    border: 1px solid#8696A6;
+    color: #8696A6;
+    padding: 0.5vw;
+    font-size: 14px;
+}
+
+.Footer__links__item{
+    padding-right: 16px;
+    border-right: 1px solid #a7a9ac;
+}
+
+.Footer__links__item:not(:first-child){
+    padding-left: 16px;
+}
+
+.Footer__links__item>a{
+    text-decoration: none;
+    color: #a7a9ac;
+    font-size: 14px;
 }
